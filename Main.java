@@ -15,12 +15,23 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Date;*/
+import java.io.*;
+import java.util.Scanner;
 
 
 public class Main {
 
-	public static void main(String[] args){
+	public static void main(String[] args) throws IOException{
+    Scanner scan = new Scanner(System.in);
+
     System.out.println("Hello World");
+    System.out.println("Book title: ");
+    String title = scan.nextLine();
+    System.out.println("Issue Number: ");
+    String issue = scan.nextLine();
+    System.out.println("Grade: ");
+    String grade = scan.nextLine();
+    System.out.println(title +" "+issue+" "+grade);
   }
 
 }
