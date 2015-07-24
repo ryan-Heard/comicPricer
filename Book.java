@@ -1,10 +1,10 @@
 
 
 public class Book {
-  private String title = "";
-  private double issueNum = 0;
-  private String grade = "";
-  private Double retailFor = 0;
+  private String title;
+  private Double issueNum;
+  private String grade;
+  private Double retailFor;
 
 /**
  * [init description]
@@ -13,17 +13,17 @@ public class Book {
  * @param  {String} variantId [Books can be id by A-Z or another word and or number
  * combination that makes it distinct]
  */
-  public void init(name,number, gradeId){
+  public void init(String name, Double number, String gradeId){
     this.title = name;
     this.issueNum = number;
-    this.variantId = gradeId;
+    this.grade = gradeId;
   }
 
   /**
    * Returns the description of the book.
    */
   public void summery(){
-    System.out.println(this.title +" "+this.issue+" "+this.grade);
+    System.out.println(this.title +" "+this.issueNum+" "+this.grade);
   }
 
 }

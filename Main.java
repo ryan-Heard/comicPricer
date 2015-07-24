@@ -28,17 +28,20 @@ public class Main {
 	public static void main(String[] args) throws IOException{
     Scanner scan = new Scanner(System.in);
     Book userBook = new Book();
+	  Scrape bookScrape = new Scrape();
 
     System.out.println("Hello World");
     System.out.println("Book title: ");
     String title = scan.nextLine();
     System.out.println("Issue Number: ");
-    String issue = scan.nextLine();
+    Double issue = scan.nextDouble();
     System.out.println("Grade: ");
     String grade = scan.nextLine();
 
     userBook.init(title,issue,grade);
     userBook.summery();
+
+		//bookScrape.toScrape();
   }
 
 }
